@@ -35,7 +35,7 @@ const video = document.getElementById("mcVideo");
 
 function openModal() {
   modal.style.display = "flex";
-  video.currentTime = 0; // restart from beginning
+  video.currentTime = 0; // start from beginning
   video.play();
 }
 

@@ -27,9 +27,9 @@
       <nav class="desktop-nav">
         <ul>
           <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">MC Jonah</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Charity</a></li>
+          <li><a href="mc-jonah.html">MC Jonah</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="charity.html">Charity</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -51,9 +51,9 @@
       </div>
       <ul>
         <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">MC Jonah</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Charity</a></li>
+        <li><a href="mc-jonah.html">MC Jonah</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="charity.html">Charity</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
 
@@ -291,30 +291,86 @@
         </div>
 
         <!-- Right Column: Video Thumbnail -->
+        <!-- Right Column: Video Thumbnail -->
         <div class="mc-media">
           <div class="video-thumbnail">
-            <img src="assets/hero2.jpg" alt="MC Jonah Demo Reel" />
+            <img src="images/mc-thumbnail.jpg" alt="MC Jonah Demo Reel" />
             <div class="play-btn" id="openVideo2">▶</div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="videoModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="mcVideo" controls>
+              <source src="assets/MC_J.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p class="subtitle">
+          We’d love to hear from you. Reach out today and let’s start planning
+          your unforgettable event.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <form action="#" method="post">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input type="tel" name="phone" placeholder="Your Phone" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info-box">
+            <h3>Contact Details</h3>
+            <p><strong>📍 Address:</strong> 123 Event Street, London, UK</p>
+            <p>
+              <strong>📞 Phone:</strong>
+              <a href="tel:+442012345678">+44 20 1234 5678</a>
+            </p>
+            <p>
+              <strong>✉️ Email:</strong>
+              <a href="mailto:info@shinnersevent.com">info@shinnersevent.com</a>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Modal -->
-    <div id="videoModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <iframe
-          id="videoFrame"
-          src="assets/MC_J.mp4"
-          title="MC Jonah Demo Reel"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        >
-        </iframe>
-      </div>
-    </div>
     <footer class="footer">
       <div class="footer-container">
         <!-- Company Info -->

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charity - SHINNERS Event</title>
+    <link rel="stylesheet" href="charity.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <!-- Replace text with image logo -->
+      <div class="logo">
+        <img src="assets/shinners_logo.png" alt="Shinners Event Ltd Logo" />
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="mc-jonah.html">MC Jonah</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="charity.html">Charity</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Get Quote Desktop -->
+      <a href="#" class="quote-btn desktop-quote">Get Quote</a>
+
+      <!-- Hamburger Menu (Mobile only) -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <div class="mobile-header">
+        <div class="logo">
+          <img src="assets/shinners_logo.png" alt="Shinners Event Ltd Logo" />
+        </div>
+        <div class="close-btn" id="close-btn">✖</div>
+      </div>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="mc-jonah.html">MC Jonah</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="charity.html">Charity</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="contact-info">
+        <p>📞 +44 20 1234 5678</p>
+        <p>✉️ info@shinnersevent.com</p>
+      </div>
+
+      <a href="#" class="quote-btn mobile-quote">Get Quote</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Support Our Mission</h1>
+        <p>
+          Join SHINNERS Event in making a lasting impact through our CSR
+          programs.
+        </p>
+        <a href="#donate" class="btn-primary">Donate Now</a>
+      </div>
+    </section>
+
+    <!-- Commitment -->
+    <section class="commitment">
+      <h2>Our Commitment to Society</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>🎓 Educating Less Fortunate</h3>
+          <p>We sponsor 90 vulnerable students in high school education.</p>
+        </div>
+        <div class="card">
+          <h3>🏠 Children's Homes Support</h3>
+          <p>
+            We provide material donations to children's homes and special
+            schools across Kenya.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🎭 Talent Development</h3>
+          <p>
+            Empowering youth by identifying and supporting their talents through
+            mentorship and events.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🎗 Sponsorship of Charity Events</h3>
+          <p>
+            We sponsor events like the Boot Cancer Challenge, KU Golf
+            Tournament, and Eardrop Kenya.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donate -->
+    <section id="donate" class="donate">
+      <h2>Choose a Donation Method</h2>
+      <div class="donate-options">
+        <div class="donate-card">
+          <h3>Donate via PayPal</h3>
+          <a href="#" class="btn-secondary">Donate with PayPal</a>
+        </div>
+        <div class="donate-card">
+          <h3>Donate via M-Pesa</h3>
+          <p>Go to <strong>M-Pesa → Lipa na M-Pesa → Paybill</strong></p>
+          <p><strong>Paybill:</strong> 123456</p>
+          <p><strong>Account:</strong> SHINNERSCSR</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+      <h2>Snapshots from Past Charity Events</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="boot-cancer.jpg" alt="Boot Cancer Challenge" />
+          <p>Boot Cancer Challenge</p>
+        </div>
+        <div class="gallery-item">
+          <img src="golf.jpg" alt="KU Golf Tournament" />
+          <p>KU Golf for Orphaned Students</p>
+        </div>
+        <div class="gallery-item">
+          <img src="eardrop.jpg" alt="Eardrop Kenya" />
+          <p>Eardrop Kenya - Hearing Aid Camp</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 SHINNERS Event | Together We Make a Difference</p>
+    </footer>
+
+    <!-- Script for mobile nav + scroll effect -->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileNav = document.getElementById("mobile-nav");
+      const closeBtn = document.getElementById("close-btn");
+      const header = document.querySelector("header");
+
+      menuToggle.addEventListener("click", () => {
+        mobileNav.classList.add("active");
+      });
+      closeBtn.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+      });
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
