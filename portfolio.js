@@ -1,34 +1,39 @@
 // Sample Portfolio Data
 const portfolioItems = [
   {
-    title: "Corporate Gala",
-    category: "corporate",
-    image: "assets/hero2.jpg",
-  },
-  {
-    title: "Wedding Reception",
-    category: "wedding",
-    image: "assets/hero1.jpg",
-  },
-  {
-    title: "Charity Fundraiser",
-    category: "charity",
-    image: "assets/hero3.jpg",
-  },
-  {
-    title: "Music Concert",
+    title: "Chan -Kenya Vs Morocco",
     category: "entertainment",
-    image: "assets/portfolio4.jpg",
+    image: "assets/chan_field.jpg",
   },
   {
-    title: "Corporate Conference",
-    category: "corporate",
-    image: "assets/portfolio5.jpg",
+    title: "Chan 2024 Finals",
+    category: "entertaiment",
+    image: "assets/chan2.jpg",
   },
   {
-    title: "Luxury Wedding",
+    title: "Wedding Ceremony",
     category: "wedding",
-    image: "assets/portfolio6.jpg",
+    image: "assets/wedding.jpg",
+  },
+  {
+    title: "Corporate ",
+    category: "corporate",
+    image: "assets/corp.jpg",
+  },
+  {
+    title: "Garissa County Public Holiday",
+    category: "corporate",
+    image: "assets/gari.jpg",
+  },
+  {
+    title: "Team Building",
+    category: "entertainment",
+    image: "assets/team.jpg",
+  },
+  {
+    title: "Graduation Ceremony",
+    category: "entertainment",
+    image: "assets/gradu.jpg",
   },
 ];
 
