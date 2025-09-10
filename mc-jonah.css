@@ -90,6 +90,44 @@
   color: #007bff;
   transform: translateY(-2px);
 }
+/* Hero Social Links */
+.hero-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.hero-social a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: #fff;
+  background: #007bff; /* default brand color */
+  transition: all 0.3s ease;
+}
+
+.hero-social a:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* Optional: platform-specific colors */
+.hero-social a:nth-child(1) {
+  background: #1877f2;
+} /* Facebook */
+.hero-social a:nth-child(2) {
+  background: #e4405f;
+} /* Instagram */
+.hero-social a:nth-child(3) {
+  background: #0077b5;
+} /* LinkedIn */
+.hero-social a:nth-child(4) {
+  background: #000000;
+} /* TikTok */
 
 /* Right Column - Image */
 .hero-image img {

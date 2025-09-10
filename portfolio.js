@@ -35,6 +35,16 @@ const portfolioItems = [
     category: "entertainment",
     image: "assets/gradu.jpg",
   },
+  {
+    title: "Event Setup",
+    category: "entertainment",
+    image: "assets/setup.jpg",
+  },
+  {
+    title: "Wedding Ceremony",
+    category: "wedding",
+    image: "assets/wed2.jpg",
+  },
 ];
 
 // Render Portfolio Items
