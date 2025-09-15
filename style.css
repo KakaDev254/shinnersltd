@@ -414,27 +414,27 @@ header .logo img {
 }
 
 /* Logo grid */
-.logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 40px;
-  align-items: center;
-  justify-items: center;
-  width: 90%; /* stretch logos to 90% */
-  margin: 0 auto;
+
+.logo-track {
+  display: flex;
+  width: calc(250px * 20); /* adjust width (image width × total images) */
+  animation: scroll 30s linear infinite;
 }
 
-.logo-grid img {
-  max-height: 80px;
-  max-width: 100%;
+.logo-track img {
+  height: 80px; /* adjust logo size */
+  margin: 0 20px;
   object-fit: contain;
-  transition: transform 0.3s ease;
 }
 
-.logo-grid img:hover {
-  transform: scale(1.1);
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  } /* shift half because we duplicated */
 }
-
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .why-choose h2 {
