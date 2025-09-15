@@ -196,7 +196,7 @@ header .logo img {
 .hero {
   height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("assets/hero2.jpg") center/cover no-repeat;
+    url("assets/mully.jpg") center/cover no-repeat;
   color: #fff;
   text-align: center;
   display: flex;
