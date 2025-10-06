@@ -1,6 +1,21 @@
 // Sample Portfolio Data
 const portfolioItems = [
   {
+    title: "Mary & Andrew's Itaara Ceremony",
+    category: "wedding",
+    image: "assets/mary_weds2.jpg",
+  },
+  {
+    title: "Mary & Andrew's Itaara Ceremony",
+    category: "wedding",
+    image: "assets/mary_weds1.jpg",
+  },
+  {
+    title: "Mary & Andrew's Itaara Ceremony",
+    category: "wedding",
+    image: "assets/mary_weds3.jpg",
+  },
+  {
     title: "Chan -Kenya Vs Morocco",
     category: "entertainment",
     image: "assets/chan_field.jpg",
